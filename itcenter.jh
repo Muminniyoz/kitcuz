@@ -1,0 +1,141 @@
+/**  Enum START */
+enum Gender{
+	MALE, FEMALE, OTHER
+}
+enum GroupStatus{
+	STARTING,
+    PLANNING,
+    FINISHED,
+    CANCELED
+}
+/**  Entities START */
+entity SystemFiles{
+	name String required,
+    type String maxlength(5),
+    file Blob,
+    time Instant   
+}
+entity Courses {
+	title String required
+    about TextBlob
+    price Integer min(0)
+    imageUrl String    
+}
+entity Skill{
+ name String
+}
+entity Teacher{
+   firstName String required,
+   lastName String required,
+   middleName String 
+   email String,
+   dateOfBirth LocalDate,
+   gender Gender,
+   registerationDate LocalDate,
+   lastAccess ZonedDateTime,
+   telephone String,
+   mobile String,
+   thumbnailPhotoUrl String,
+   fullPhotoUrl String,
+   active Boolean,
+   key String
+   about String
+   portfolia TextBlob
+   leaveDate LocalDate
+   isShowingHome Boolean
+   imageUrl String
+}
+entity Planning {
+	name String
+    about String
+    duration String
+    fileUrl String
+}
+entity CourseGroup {
+	name String 
+    startDate LocalDate
+    status GroupStatus    
+}
+entity Theme {
+	name String
+    number Integer
+    isSection Boolean
+    about String
+    homeWorkAbouts String
+    fileUrl String
+}
+entity Student {
+   firstName String required,
+   lastName String required,
+   middleName String 
+   email String,
+   dateOfBirth LocalDate,
+   gender Gender,
+   registerationDate LocalDate,
+   lastAccess ZonedDateTime,
+   telephone String,
+   mobile String,
+   thumbnailPhotoUrl String,
+   fullPhotoUrl String,
+   active Boolean,
+   key String
+}
+entity StudentGroup{
+	startingDate LocalDate
+    active Boolean
+    contractNumber String
+}
+
+entity Projects{
+	title String
+  	about TextBlob
+    fileUrl String
+    createdDate LocalDate
+    isShowing Boolean
+}
+entity AbilityStudent{
+	  firstName String required,
+   lastName String required,
+   middleName String 
+   about TextBlob
+   email String,
+   dateOfBirth LocalDate,
+   registerationDate LocalDate,
+   telephone String,
+   mobile String,
+   thumbnailPhotoUrl String,
+   fullPhotoUrl String,
+   isShowing Boolean
+
+}
+
+relationship ManyToOne {
+	StudentGroup{student} to Student,
+    StudentGroup{group} to CourseGroup
+}
+relationship ManyToMany {
+	Teacher{skills} to Skill{teacher},
+    Courses{skills} to Skill{courses},
+}
+
+relationship ManyToOne {
+	Planning{course} to Courses,
+    Planning{teacher} to Teacher,
+    CourseGroup{teacher} to Teacher,
+    CourseGroup{planning} to Planning,
+    Theme{planning} to Planning
+}
+
+
+/** Realationship end */
+/** Options */
+// Set pagination options
+paginate all with infinite-scroll
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+filter *
