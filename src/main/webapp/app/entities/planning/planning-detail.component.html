@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="planning">
+            <h2><span jhiTranslate="kitcuzApp.planning.detail.title">Planning</span> {{ planning.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kitcuzApp.planning.name">Name</span></dt>
+                <dd>
+                    <span>{{ planning.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.planning.about">About</span></dt>
+                <dd>
+                    <span>{{ planning.about }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.planning.duration">Duration</span></dt>
+                <dd>
+                    <span>{{ planning.duration }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.planning.fileUrl">File Url</span></dt>
+                <dd>
+                    <span>{{ planning.fileUrl }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.planning.course">Course</span></dt>
+                <dd>
+                    <div *ngIf="planning.courseId">
+                        <a [routerLink]="['/courses', planning.courseId, 'view']">{{ planning.courseId }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.planning.teacher">Teacher</span></dt>
+                <dd>
+                    <div *ngIf="planning.teacherId">
+                        <a [routerLink]="['/teacher', planning.teacherId, 'view']">{{ planning.teacherId }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/planning', planning.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

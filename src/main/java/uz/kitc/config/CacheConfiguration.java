@@ -47,6 +47,21 @@ public class CacheConfiguration {
             createCache(cm, uz.kitc.domain.User.class.getName());
             createCache(cm, uz.kitc.domain.Authority.class.getName());
             createCache(cm, uz.kitc.domain.User.class.getName() + ".authorities");
+            createCache(cm, uz.kitc.domain.SystemFiles.class.getName());
+            createCache(cm, uz.kitc.domain.Courses.class.getName());
+            createCache(cm, uz.kitc.domain.Courses.class.getName() + ".skills");
+            createCache(cm, uz.kitc.domain.Skill.class.getName());
+            createCache(cm, uz.kitc.domain.Skill.class.getName() + ".teachers");
+            createCache(cm, uz.kitc.domain.Skill.class.getName() + ".courses");
+            createCache(cm, uz.kitc.domain.Teacher.class.getName());
+            createCache(cm, uz.kitc.domain.Teacher.class.getName() + ".skills");
+            createCache(cm, uz.kitc.domain.Planning.class.getName());
+            createCache(cm, uz.kitc.domain.CourseGroup.class.getName());
+            createCache(cm, uz.kitc.domain.Theme.class.getName());
+            createCache(cm, uz.kitc.domain.Student.class.getName());
+            createCache(cm, uz.kitc.domain.StudentGroup.class.getName());
+            createCache(cm, uz.kitc.domain.Projects.class.getName());
+            createCache(cm, uz.kitc.domain.AbilityStudent.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

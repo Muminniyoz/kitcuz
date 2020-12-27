@@ -1,0 +1,35 @@
+{
+  "kitcuzApp": {
+    "student": {
+      "home": {
+        "title": "Students",
+        "createLabel": "Create a new Student",
+        "createOrEditLabel": "Create or edit a Student",
+        "notFound": "No Students found"
+      },
+      "created": "A new Student is created with identifier {{ param }}",
+      "updated": "A Student is updated with identifier {{ param }}",
+      "deleted": "A Student is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Student {{ id }}?"
+      },
+      "detail": {
+        "title": "Student"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "middleName": "Middle Name",
+      "email": "Email",
+      "dateOfBirth": "Date Of Birth",
+      "gender": "Gender",
+      "registerationDate": "Registeration Date",
+      "lastAccess": "Last Access",
+      "telephone": "Telephone",
+      "mobile": "Mobile",
+      "thumbnailPhotoUrl": "Thumbnail Photo Url",
+      "fullPhotoUrl": "Full Photo Url",
+      "active": "Active",
+      "key": "Key"
+    }
+  }
+}
