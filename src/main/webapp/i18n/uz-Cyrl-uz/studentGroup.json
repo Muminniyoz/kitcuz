@@ -1,0 +1,26 @@
+{
+  "kitcuzApp": {
+    "studentGroup": {
+      "home": {
+        "title": "Student Groups",
+        "createLabel": "Янги Student Group қўшиш",
+        "createOrEditLabel": "Student Groupни таҳрирлаш",
+        "notFound": "No Student Groups found"
+      },
+      "created": "Student Group {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Student Group сақланди.",
+      "deleted": "{{ param }}- Student Group ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Student Groupни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Student Group"
+      },
+      "startingDate": "Starting Date",
+      "active": "Active",
+      "contractNumber": "Contract Number",
+      "student": "Student",
+      "group": "Group"
+    }
+  }
+}

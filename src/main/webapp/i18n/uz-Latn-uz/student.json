@@ -1,0 +1,35 @@
+{
+  "kitcuzApp": {
+    "student": {
+      "home": {
+        "title": "Students",
+        "createLabel": "Yangi Student qo`shish",
+        "createOrEditLabel": "Studentni tahrirlash",
+        "notFound": "No Students found"
+      },
+      "created": "Student {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Student saqlandi",
+      "deleted": "{{ param }}- Student o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Studentni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Student"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "middleName": "Middle Name",
+      "email": "Email",
+      "dateOfBirth": "Date Of Birth",
+      "gender": "Gender",
+      "registerationDate": "Registeration Date",
+      "lastAccess": "Last Access",
+      "telephone": "Telephone",
+      "mobile": "Mobile",
+      "thumbnailPhotoUrl": "Thumbnail Photo Url",
+      "fullPhotoUrl": "Full Photo Url",
+      "active": "Active",
+      "key": "Key"
+    }
+  }
+}

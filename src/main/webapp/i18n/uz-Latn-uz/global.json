@@ -7,6 +7,17 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Ma`lumotlar",
+        "systemFiles": "System Files",
+        "courses": "Courses",
+        "skill": "Skill",
+        "teacher": "Teacher",
+        "planning": "Planning",
+        "courseGroup": "Course Group",
+        "theme": "Theme",
+        "student": "Student",
+        "studentGroup": "Student Group",
+        "projects": "Projects",
+        "abilityStudent": "Ability Student",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

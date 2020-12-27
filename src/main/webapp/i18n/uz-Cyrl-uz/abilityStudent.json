@@ -1,0 +1,33 @@
+{
+  "kitcuzApp": {
+    "abilityStudent": {
+      "home": {
+        "title": "Ability Students",
+        "createLabel": "Янги Ability Student қўшиш",
+        "createOrEditLabel": "Ability Studentни таҳрирлаш",
+        "notFound": "No Ability Students found"
+      },
+      "created": "Ability Student {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Ability Student сақланди.",
+      "deleted": "{{ param }}- Ability Student ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Ability Studentни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Ability Student"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "middleName": "Middle Name",
+      "about": "About",
+      "email": "Email",
+      "dateOfBirth": "Date Of Birth",
+      "registerationDate": "Registeration Date",
+      "telephone": "Telephone",
+      "mobile": "Mobile",
+      "thumbnailPhotoUrl": "Thumbnail Photo Url",
+      "fullPhotoUrl": "Full Photo Url",
+      "isShowing": "Is Showing"
+    }
+  }
+}

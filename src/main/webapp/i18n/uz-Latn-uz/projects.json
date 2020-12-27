@@ -1,0 +1,26 @@
+{
+  "kitcuzApp": {
+    "projects": {
+      "home": {
+        "title": "Projects",
+        "createLabel": "Yangi Projects qo`shish",
+        "createOrEditLabel": "Projectsni tahrirlash",
+        "notFound": "No Projects found"
+      },
+      "created": "Projects {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Projects saqlandi",
+      "deleted": "{{ param }}- Projects o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Projectsni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Projects"
+      },
+      "title": "Title",
+      "about": "About",
+      "fileUrl": "File Url",
+      "createdDate": "Created Date",
+      "isShowing": "Is Showing"
+    }
+  }
+}

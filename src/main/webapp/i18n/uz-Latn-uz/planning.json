@@ -1,0 +1,27 @@
+{
+  "kitcuzApp": {
+    "planning": {
+      "home": {
+        "title": "Plannings",
+        "createLabel": "Yangi Planning qo`shish",
+        "createOrEditLabel": "Planningni tahrirlash",
+        "notFound": "No Plannings found"
+      },
+      "created": "Planning {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Planning saqlandi",
+      "deleted": "{{ param }}- Planning o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Planningni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Planning"
+      },
+      "name": "Name",
+      "about": "About",
+      "duration": "Duration",
+      "fileUrl": "File Url",
+      "course": "Course",
+      "teacher": "Teacher"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "kitcuzApp": {
+    "GroupStatus": {
+      "null": "",
+      "STARTING": "STARTING",
+      "PLANNING": "PLANNING",
+      "FINISHED": "FINISHED",
+      "CANCELED": "CANCELED"
+    }
+  }
+}
