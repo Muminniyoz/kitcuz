@@ -1,0 +1,32 @@
+{
+  "kitcuzApp": {
+    "courseRequests": {
+      "home": {
+        "title": "Course Requests",
+        "createLabel": "Create a new Course Requests",
+        "createOrEditLabel": "Create or edit a Course Requests",
+        "notFound": "No Course Requests found"
+      },
+      "created": "A new Course Requests is created with identifier {{ param }}",
+      "updated": "A Course Requests is updated with identifier {{ param }}",
+      "deleted": "A Course Requests is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Course Requests {{ id }}?"
+      },
+      "detail": {
+        "title": "Course Requests"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "middleName": "Middle Name",
+      "email": "Email",
+      "dateOfBirth": "Date Of Birth",
+      "gender": "Gender",
+      "registerationDate": "Registeration Date",
+      "telephone": "Telephone",
+      "mobile": "Mobile",
+      "courses": "Courses",
+      "courses": "Courses"
+    }
+  }
+}

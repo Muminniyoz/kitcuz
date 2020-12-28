@@ -1,0 +1,27 @@
+{
+  "kitcuzApp": {
+    "news": {
+      "home": {
+        "title": "News",
+        "createLabel": "Янги News қўшиш",
+        "createOrEditLabel": "Newsни таҳрирлаш",
+        "notFound": "No News found"
+      },
+      "created": "News {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- News сақланди.",
+      "deleted": "{{ param }}- News ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Newsни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "News"
+      },
+      "title": "Title",
+      "shortText": "Short Text",
+      "fullText": "Full Text",
+      "createdDate": "Created Date",
+      "active": "Active",
+      "imageUrl": "Image Url"
+    }
+  }
+}

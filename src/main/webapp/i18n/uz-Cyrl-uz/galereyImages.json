@@ -1,0 +1,25 @@
+{
+  "kitcuzApp": {
+    "galereyImages": {
+      "home": {
+        "title": "Galerey Images",
+        "createLabel": "Янги Galerey Images қўшиш",
+        "createOrEditLabel": "Galerey Imagesни таҳрирлаш",
+        "notFound": "No Galerey Images found"
+      },
+      "created": "Galerey Images {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Galerey Images сақланди.",
+      "deleted": "{{ param }}- Galerey Images ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Galerey Imagesни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Galerey Images"
+      },
+      "title": "Title",
+      "imageUrl": "Image Url",
+      "number": "Number",
+      "galerey": "Galerey"
+    }
+  }
+}

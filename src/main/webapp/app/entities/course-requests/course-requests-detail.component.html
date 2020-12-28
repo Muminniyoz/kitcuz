@@ -1,0 +1,74 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="courseRequests">
+            <h2><span jhiTranslate="kitcuzApp.courseRequests.detail.title">Course Requests</span> {{ courseRequests.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.firstName">First Name</span></dt>
+                <dd>
+                    <span>{{ courseRequests.firstName }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{ courseRequests.lastName }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.middleName">Middle Name</span></dt>
+                <dd>
+                    <span>{{ courseRequests.middleName }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.email">Email</span></dt>
+                <dd>
+                    <span>{{ courseRequests.email }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.dateOfBirth">Date Of Birth</span></dt>
+                <dd>
+                    <span>{{ courseRequests.dateOfBirth }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.gender">Gender</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'kitcuzApp.Gender.' + courseRequests.gender }}">{{ courseRequests.gender }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.registerationDate">Registeration Date</span></dt>
+                <dd>
+                    <span>{{ courseRequests.registerationDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.telephone">Telephone</span></dt>
+                <dd>
+                    <span>{{ courseRequests.telephone }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.mobile">Mobile</span></dt>
+                <dd>
+                    <span>{{ courseRequests.mobile }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.courses">Courses</span></dt>
+                <dd>
+                    <div *ngIf="courseRequests.coursesId">
+                        <a [routerLink]="['/courses', courseRequests.coursesId, 'view']">{{ courseRequests.coursesId }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.courses">Courses</span></dt>
+                <dd>
+                    <div *ngIf="courseRequests.coursesId">
+                        <a [routerLink]="['/course-group', courseRequests.coursesId, 'view']">{{ courseRequests.coursesId }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/course-requests', courseRequests.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

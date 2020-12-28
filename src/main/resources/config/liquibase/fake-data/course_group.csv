@@ -1,0 +1,11 @@
+id;name;start_date;status
+1;SSL Cotton;2020-12-27;CANCELED
+2;indexing;2020-12-27;PLANNING
+3;Borders payment interface;2020-12-27;PLANNING
+4;Incredible Small Digitized;2020-12-28;PLANNING
+5;payment;2020-12-27;FINISHED
+6;Grocery Cocos (Keeling) Islands Kids;2020-12-27;CANCELED
+7;Licensed Plastic Car deposit green;2020-12-28;STARTING
+8;parsing Florida;2020-12-27;PLANNING
+9;deposit bypass;2020-12-28;STARTING
+10;PCI Frozen deposit;2020-12-28;STARTING

@@ -1,0 +1,26 @@
+{
+  "kitcuzApp": {
+    "courses": {
+      "home": {
+        "title": "Courses",
+        "createLabel": "Янги Courses қўшиш",
+        "createOrEditLabel": "Coursesни таҳрирлаш",
+        "notFound": "No Courses found"
+      },
+      "created": "Courses {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Courses сақланди.",
+      "deleted": "{{ param }}- Courses ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Coursesни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Courses"
+      },
+      "title": "Title",
+      "about": "About",
+      "price": "Price",
+      "imageUrl": "Image Url",
+      "skills": "Skills"
+    }
+  }
+}

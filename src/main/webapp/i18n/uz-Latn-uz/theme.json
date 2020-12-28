@@ -1,0 +1,28 @@
+{
+  "kitcuzApp": {
+    "theme": {
+      "home": {
+        "title": "Themes",
+        "createLabel": "Yangi Theme qo`shish",
+        "createOrEditLabel": "Themeni tahrirlash",
+        "notFound": "No Themes found"
+      },
+      "created": "Theme {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Theme saqlandi",
+      "deleted": "{{ param }}- Theme o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Themeni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Theme"
+      },
+      "name": "Name",
+      "number": "Number",
+      "isSection": "Is Section",
+      "about": "About",
+      "homeWorkAbouts": "Home Work Abouts",
+      "fileUrl": "File Url",
+      "planning": "Planning"
+    }
+  }
+}

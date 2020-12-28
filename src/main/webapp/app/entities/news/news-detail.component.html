@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="news">
+            <h2><span jhiTranslate="kitcuzApp.news.detail.title">News</span> {{ news.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kitcuzApp.news.title">Title</span></dt>
+                <dd>
+                    <span>{{ news.title }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.news.shortText">Short Text</span></dt>
+                <dd>
+                    <span>{{ news.shortText }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.news.fullText">Full Text</span></dt>
+                <dd>
+                    <span>{{ news.fullText }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.news.createdDate">Created Date</span></dt>
+                <dd>
+                    <span>{{ news.createdDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.news.active">Active</span></dt>
+                <dd>
+                    <span>{{ news.active }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.news.imageUrl">Image Url</span></dt>
+                <dd>
+                    <span>{{ news.imageUrl }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/news', news.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
