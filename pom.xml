@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>uz.kitc</groupId>
-    <artifactId>kitcuz</artifactId>
+    <artifactId>ROOT</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Kitcuz</name>
+    <name>ROOT</name>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
@@ -318,6 +318,7 @@
 
     <build>
         <defaultGoal>spring-boot:run</defaultGoal>
+        <finalName>ROOT</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
