@@ -1,0 +1,25 @@
+{
+  "kitcuzApp": {
+    "galereyImages": {
+      "home": {
+        "title": "Galerey Images",
+        "createLabel": "Yangi Galerey Images qo`shish",
+        "createOrEditLabel": "Galerey Imagesni tahrirlash",
+        "notFound": "No Galerey Images found"
+      },
+      "created": "Galerey Images {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Galerey Images saqlandi",
+      "deleted": "{{ param }}- Galerey Images o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Galerey Imagesni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Galerey Images"
+      },
+      "title": "Title",
+      "imageUrl": "Image Url",
+      "number": "Number",
+      "galerey": "Galerey"
+    }
+  }
+}

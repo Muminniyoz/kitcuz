@@ -1,0 +1,25 @@
+{
+  "kitcuzApp": {
+    "faq": {
+      "home": {
+        "title": "Faqs",
+        "createLabel": "Yangi Faq qo`shish",
+        "createOrEditLabel": "Faqni tahrirlash",
+        "notFound": "No Faqs found"
+      },
+      "created": "Faq {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Faq saqlandi",
+      "deleted": "{{ param }}- Faq o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Faqni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Faq"
+      },
+      "orderNumber": "Order Number",
+      "question": "Question",
+      "answer": "Answer",
+      "active": "Active"
+    }
+  }
+}

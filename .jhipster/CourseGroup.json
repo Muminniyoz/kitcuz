@@ -1,0 +1,45 @@
+{
+  "name": "CourseGroup",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "GroupStatus",
+      "fieldValues": "STARTING,PLANNING,FINISHED,CANCELED"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "teacher",
+      "otherEntityRelationshipName": "courseGroup",
+      "relationshipName": "teacher",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "planning",
+      "otherEntityRelationshipName": "courseGroup",
+      "relationshipName": "planning",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201228090301",
+  "entityTableName": "course_group",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

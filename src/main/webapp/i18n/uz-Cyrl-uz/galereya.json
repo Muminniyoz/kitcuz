@@ -1,0 +1,23 @@
+{
+  "kitcuzApp": {
+    "galereya": {
+      "home": {
+        "title": "Galereyas",
+        "createLabel": "Янги Galereya қўшиш",
+        "createOrEditLabel": "Galereyaни таҳрирлаш",
+        "notFound": "No Galereyas found"
+      },
+      "created": "Galereya {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Galereya сақланди.",
+      "deleted": "{{ param }}- Galereya ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Galereyaни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Galereya"
+      },
+      "title": "Title",
+      "createdDate": "Created Date"
+    }
+  }
+}

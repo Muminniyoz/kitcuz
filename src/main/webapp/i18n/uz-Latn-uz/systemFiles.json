@@ -1,0 +1,27 @@
+{
+  "kitcuzApp": {
+    "systemFiles": {
+      "home": {
+        "title": "System Files",
+        "createLabel": "Yangi System Files qo`shish",
+        "createOrEditLabel": "System Filesni tahrirlash",
+        "notFound": "No System Files found"
+      },
+      "created": "System Files {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- System Files saqlandi",
+      "deleted": "{{ param }}- System Files o`chirildi",
+      "delete": {
+        "question": "{{ id }}- System Filesni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "System Files"
+      },
+      "name": "Name",
+      "hashName": "Hash Name",
+      "type": "Type",
+      "file": "File",
+      "time": "Time",
+      "fileGroup": "File Group"
+    }
+  }
+}

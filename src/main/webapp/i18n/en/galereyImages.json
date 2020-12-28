@@ -1,0 +1,25 @@
+{
+  "kitcuzApp": {
+    "galereyImages": {
+      "home": {
+        "title": "Galerey Images",
+        "createLabel": "Create a new Galerey Images",
+        "createOrEditLabel": "Create or edit a Galerey Images",
+        "notFound": "No Galerey Images found"
+      },
+      "created": "A new Galerey Images is created with identifier {{ param }}",
+      "updated": "A Galerey Images is updated with identifier {{ param }}",
+      "deleted": "A Galerey Images is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Galerey Images {{ id }}?"
+      },
+      "detail": {
+        "title": "Galerey Images"
+      },
+      "title": "Title",
+      "imageUrl": "Image Url",
+      "number": "Number",
+      "galerey": "Galerey"
+    }
+  }
+}

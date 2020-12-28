@@ -1,0 +1,27 @@
+{
+  "kitcuzApp": {
+    "systemFiles": {
+      "home": {
+        "title": "System Files",
+        "createLabel": "Янги System Files қўшиш",
+        "createOrEditLabel": "System Filesни таҳрирлаш",
+        "notFound": "No System Files found"
+      },
+      "created": "System Files {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- System Files сақланди.",
+      "deleted": "{{ param }}- System Files ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- System Filesни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "System Files"
+      },
+      "name": "Name",
+      "hashName": "Hash Name",
+      "type": "Type",
+      "file": "File",
+      "time": "Time",
+      "fileGroup": "File Group"
+    }
+  }
+}

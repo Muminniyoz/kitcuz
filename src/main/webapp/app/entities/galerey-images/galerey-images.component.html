@@ -1,0 +1,71 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="kitcuzApp.galereyImages.home.title">Galerey Images</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-galerey-images" [routerLink]="['/galerey-images/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="kitcuzApp.galereyImages.home.createLabel">
+            Create a new Galerey Images
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="galereyImages?.length === 0">
+        <span jhiTranslate="kitcuzApp.galereyImages.home.notFound">No galereyImages found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="galereyImages && galereyImages.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="reset.bind(this)">
+                    <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="title"><span jhiTranslate="kitcuzApp.galereyImages.title">Title</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="imageUrl"><span jhiTranslate="kitcuzApp.galereyImages.imageUrl">Image Url</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="number"><span jhiTranslate="kitcuzApp.galereyImages.number">Number</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="galereyId"><span jhiTranslate="kitcuzApp.galereyImages.galerey">Galerey</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll (scrolled)="loadPage(page + 1)" [infiniteScrollDisabled]="page >= links['last']" [infiniteScrollDistance]="0">
+                <tr *ngFor="let galereyImages of galereyImages ;trackBy: trackId">
+                    <td><a [routerLink]="['/galerey-images', galereyImages.id, 'view']">{{ galereyImages.id }}</a></td>
+                    <td>{{ galereyImages.title }}</td>
+                    <td>{{ galereyImages.imageUrl }}</td>
+                    <td>{{ galereyImages.number }}</td>
+                    <td>
+                        <div *ngIf="galereyImages.galereyId">
+                            <a [routerLink]="['/galereya', galereyImages.galereyId , 'view']" >{{ galereyImages.galereyId }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/galerey-images', galereyImages.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/galerey-images', galereyImages.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(galereyImages)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

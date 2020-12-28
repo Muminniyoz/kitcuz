@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="faq">
+            <h2><span jhiTranslate="kitcuzApp.faq.detail.title">Faq</span> {{ faq.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kitcuzApp.faq.orderNumber">Order Number</span></dt>
+                <dd>
+                    <span>{{ faq.orderNumber }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.faq.question">Question</span></dt>
+                <dd>
+                    <span>{{ faq.question }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.faq.answer">Answer</span></dt>
+                <dd>
+                    <span>{{ faq.answer }}</span>
+                </dd>
+                <dt><span jhiTranslate="kitcuzApp.faq.active">Active</span></dt>
+                <dd>
+                    <span>{{ faq.active }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/faq', faq.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

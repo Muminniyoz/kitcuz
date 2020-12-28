@@ -1,0 +1,32 @@
+{
+  "kitcuzApp": {
+    "courseRequests": {
+      "home": {
+        "title": "Course Requests",
+        "createLabel": "Янги Course Requests қўшиш",
+        "createOrEditLabel": "Course Requestsни таҳрирлаш",
+        "notFound": "No Course Requests found"
+      },
+      "created": "Course Requests {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Course Requests сақланди.",
+      "deleted": "{{ param }}- Course Requests ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Course Requestsни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Course Requests"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "middleName": "Middle Name",
+      "email": "Email",
+      "dateOfBirth": "Date Of Birth",
+      "gender": "Gender",
+      "registerationDate": "Registeration Date",
+      "telephone": "Telephone",
+      "mobile": "Mobile",
+      "courses": "Courses",
+      "courses": "Courses"
+    }
+  }
+}
