@@ -50,10 +50,10 @@
                         <a [routerLink]="['/courses', courseRequests.coursesId, 'view']">{{ courseRequests.coursesId }}</a>
                     </div>
                 </dd>
-                <dt><span jhiTranslate="kitcuzApp.courseRequests.courses">Courses</span></dt>
+                <dt><span jhiTranslate="kitcuzApp.courseRequests.coursesGroup">Courses Group</span></dt>
                 <dd>
-                    <div *ngIf="courseRequests.coursesId">
-                        <a [routerLink]="['/course-group', courseRequests.coursesId, 'view']">{{ courseRequests.coursesId }}</a>
+                    <div *ngIf="courseRequests.coursesGroupId">
+                        <a [routerLink]="['/course-group', courseRequests.coursesGroupId, 'view']">{{ courseRequests.coursesGroupId }}</a>
                     </div>
                 </dd>
             </dl>

@@ -35,7 +35,7 @@ public class CourseRequestsDTO implements Serializable {
 
     private Long coursesId;
 
-    private Long coursesId;
+    private Long coursesGroupId;
     
     public Long getId() {
         return id;
@@ -125,12 +125,12 @@ public class CourseRequestsDTO implements Serializable {
         this.coursesId = coursesId;
     }
 
-    public Long getCoursesId() {
-        return coursesId;
+    public Long getCoursesGroupId() {
+        return coursesGroupId;
     }
 
-    public void setCoursesId(Long courseGroupId) {
-        this.coursesId = courseGroupId;
+    public void setCoursesGroupId(Long courseGroupId) {
+        this.coursesGroupId = courseGroupId;
     }
 
     @Override
@@ -165,7 +165,7 @@ public class CourseRequestsDTO implements Serializable {
             ", telephone='" + getTelephone() + "'" +
             ", mobile='" + getMobile() + "'" +
             ", coursesId=" + getCoursesId() +
-            ", coursesId=" + getCoursesId() +
+            ", coursesGroupId=" + getCoursesGroupId() +
             "}";
     }
 }

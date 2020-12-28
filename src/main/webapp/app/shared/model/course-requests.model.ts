@@ -13,7 +13,7 @@ export interface ICourseRequests {
   telephone?: string;
   mobile?: string;
   coursesId?: number;
-  coursesId?: number;
+  coursesGroupId?: number;
 }
 
 export class CourseRequests implements ICourseRequests {
@@ -29,6 +29,6 @@ export class CourseRequests implements ICourseRequests {
     public telephone?: string,
     public mobile?: string,
     public coursesId?: number,
-    public coursesId?: number
+    public coursesGroupId?: number
   ) {}
 }

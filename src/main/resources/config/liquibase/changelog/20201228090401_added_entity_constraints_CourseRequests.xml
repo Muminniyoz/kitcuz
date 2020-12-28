@@ -14,9 +14,9 @@
                                  referencedColumnNames="id"
                                  referencedTableName="courses"/>
 
-        <addForeignKeyConstraint baseColumnNames="courses_id"
+        <addForeignKeyConstraint baseColumnNames="courses_group_id"
                                  baseTableName="course_requests"
-                                 constraintName="fk_course_requests_courses_id"
+                                 constraintName="fk_course_requests_courses_group_id"
                                  referencedColumnNames="id"
                                  referencedTableName="course_group"/>
 

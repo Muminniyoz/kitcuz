@@ -62,7 +62,7 @@ public class CourseRequests implements Serializable {
 
     @ManyToOne
     @JsonIgnoreProperties(value = "courseRequests", allowSetters = true)
-    private CourseGroup courses;
+    private CourseGroup coursesGroup;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
@@ -203,17 +203,17 @@ public class CourseRequests implements Serializable {
         this.courses = courses;
     }
 
-    public CourseGroup getCourses() {
-        return courses;
+    public CourseGroup getCoursesGroup() {
+        return coursesGroup;
     }
 
-    public CourseRequests courses(CourseGroup courseGroup) {
-        this.courses = courseGroup;
+    public CourseRequests coursesGroup(CourseGroup courseGroup) {
+        this.coursesGroup = courseGroup;
         return this;
     }
 
-    public void setCourses(CourseGroup courseGroup) {
-        this.courses = courseGroup;
+    public void setCoursesGroup(CourseGroup courseGroup) {
+        this.coursesGroup = courseGroup;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 

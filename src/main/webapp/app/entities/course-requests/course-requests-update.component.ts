@@ -37,7 +37,7 @@ export class CourseRequestsUpdateComponent implements OnInit {
     telephone: [],
     mobile: [],
     coursesId: [],
-    coursesId: [],
+    coursesGroupId: [],
   });
 
   constructor(
@@ -71,7 +71,7 @@ export class CourseRequestsUpdateComponent implements OnInit {
       telephone: courseRequests.telephone,
       mobile: courseRequests.mobile,
       coursesId: courseRequests.coursesId,
-      coursesId: courseRequests.coursesId,
+      coursesGroupId: courseRequests.coursesGroupId,
     });
   }
 
@@ -103,7 +103,7 @@ export class CourseRequestsUpdateComponent implements OnInit {
       telephone: this.editForm.get(['telephone'])!.value,
       mobile: this.editForm.get(['mobile'])!.value,
       coursesId: this.editForm.get(['coursesId'])!.value,
-      coursesId: this.editForm.get(['coursesId'])!.value,
+      coursesGroupId: this.editForm.get(['coursesGroupId'])!.value,
     };
   }
 

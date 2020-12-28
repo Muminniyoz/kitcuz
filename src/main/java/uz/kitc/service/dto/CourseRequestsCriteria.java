@@ -66,7 +66,7 @@ public class CourseRequestsCriteria implements Serializable, Criteria {
 
     private LongFilter coursesId;
 
-    private LongFilter coursesId;
+    private LongFilter coursesGroupId;
 
     public CourseRequestsCriteria() {
     }
@@ -83,7 +83,7 @@ public class CourseRequestsCriteria implements Serializable, Criteria {
         this.telephone = other.telephone == null ? null : other.telephone.copy();
         this.mobile = other.mobile == null ? null : other.mobile.copy();
         this.coursesId = other.coursesId == null ? null : other.coursesId.copy();
-        this.coursesId = other.coursesId == null ? null : other.coursesId.copy();
+        this.coursesGroupId = other.coursesGroupId == null ? null : other.coursesGroupId.copy();
     }
 
     @Override
@@ -179,12 +179,12 @@ public class CourseRequestsCriteria implements Serializable, Criteria {
         this.coursesId = coursesId;
     }
 
-    public LongFilter getCoursesId() {
-        return coursesId;
+    public LongFilter getCoursesGroupId() {
+        return coursesGroupId;
     }
 
-    public void setCoursesId(LongFilter coursesId) {
-        this.coursesId = coursesId;
+    public void setCoursesGroupId(LongFilter coursesGroupId) {
+        this.coursesGroupId = coursesGroupId;
     }
 
 
@@ -209,7 +209,7 @@ public class CourseRequestsCriteria implements Serializable, Criteria {
             Objects.equals(telephone, that.telephone) &&
             Objects.equals(mobile, that.mobile) &&
             Objects.equals(coursesId, that.coursesId) &&
-            Objects.equals(coursesId, that.coursesId);
+            Objects.equals(coursesGroupId, that.coursesGroupId);
     }
 
     @Override
@@ -226,7 +226,7 @@ public class CourseRequestsCriteria implements Serializable, Criteria {
         telephone,
         mobile,
         coursesId,
-        coursesId
+        coursesGroupId
         );
     }
 
@@ -245,7 +245,7 @@ public class CourseRequestsCriteria implements Serializable, Criteria {
                 (telephone != null ? "telephone=" + telephone + ", " : "") +
                 (mobile != null ? "mobile=" + mobile + ", " : "") +
                 (coursesId != null ? "coursesId=" + coursesId + ", " : "") +
-                (coursesId != null ? "coursesId=" + coursesId + ", " : "") +
+                (coursesGroupId != null ? "coursesGroupId=" + coursesGroupId + ", " : "") +
             "}";
     }
 

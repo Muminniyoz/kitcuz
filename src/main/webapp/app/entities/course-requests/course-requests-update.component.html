@@ -97,8 +97,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="kitcuzApp.courseRequests.courses" for="field_courses">Courses</label>
-                    <select class="form-control" id="field_courses" name="courses" formControlName="coursesId">
+                    <label class="form-control-label" jhiTranslate="kitcuzApp.courseRequests.coursesGroup" for="field_coursesGroup">Courses Group</label>
+                    <select class="form-control" id="field_coursesGroup" name="coursesGroup" formControlName="coursesGroupId">
                         <option [ngValue]="null"></option>
                         <option [ngValue]="courseGroupOption.id" *ngFor="let courseGroupOption of coursegroups; trackBy: trackById">{{ courseGroupOption.id }}</option>
                     </select>

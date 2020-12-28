@@ -13,11 +13,11 @@ import org.mapstruct.*;
 public interface CourseRequestsMapper extends EntityMapper<CourseRequestsDTO, CourseRequests> {
 
     @Mapping(source = "courses.id", target = "coursesId")
-    @Mapping(source = "courses.id", target = "coursesId")
+    @Mapping(source = "coursesGroup.id", target = "coursesGroupId")
     CourseRequestsDTO toDto(CourseRequests courseRequests);
 
     @Mapping(source = "coursesId", target = "courses")
-    @Mapping(source = "coursesId", target = "courses")
+    @Mapping(source = "coursesGroupId", target = "coursesGroup")
     CourseRequests toEntity(CourseRequestsDTO courseRequestsDTO);
 
     default CourseRequests fromId(Long id) {

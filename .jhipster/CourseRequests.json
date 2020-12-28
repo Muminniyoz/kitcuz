@@ -53,7 +53,7 @@
       "relationshipType": "many-to-one",
       "otherEntityName": "courseGroup",
       "otherEntityRelationshipName": "courseRequests",
-      "relationshipName": "courses",
+      "relationshipName": "coursesGroup",
       "otherEntityField": "id"
     }
   ],

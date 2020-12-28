@@ -122,9 +122,9 @@ public class CourseRequestsQueryService extends QueryService<CourseRequests> {
                 specification = specification.and(buildSpecification(criteria.getCoursesId(),
                     root -> root.join(CourseRequests_.courses, JoinType.LEFT).get(Courses_.id)));
             }
-            if (criteria.getCoursesId() != null) {
-                specification = specification.and(buildSpecification(criteria.getCoursesId(),
-                    root -> root.join(CourseRequests_.courses, JoinType.LEFT).get(CourseGroup_.id)));
+            if (criteria.getCoursesGroupId() != null) {
+                specification = specification.and(buildSpecification(criteria.getCoursesGroupId(),
+                    root -> root.join(CourseRequests_.coursesGroup, JoinType.LEFT).get(CourseGroup_.id)));
             }
         }
         return specification;

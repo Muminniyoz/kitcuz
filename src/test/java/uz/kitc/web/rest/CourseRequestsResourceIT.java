@@ -1035,21 +1035,21 @@ public class CourseRequestsResourceIT {
 
     @Test
     @Transactional
-    public void getAllCourseRequestsByCoursesIsEqualToSomething() throws Exception {
+    public void getAllCourseRequestsByCoursesGroupIsEqualToSomething() throws Exception {
         // Initialize the database
         courseRequestsRepository.saveAndFlush(courseRequests);
-        CourseGroup courses = CourseGroupResourceIT.createEntity(em);
-        em.persist(courses);
+        CourseGroup coursesGroup = CourseGroupResourceIT.createEntity(em);
+        em.persist(coursesGroup);
         em.flush();
-        courseRequests.setCourses(courses);
+        courseRequests.setCoursesGroup(coursesGroup);
         courseRequestsRepository.saveAndFlush(courseRequests);
-        Long coursesId = courses.getId();
+        Long coursesGroupId = coursesGroup.getId();
 
-        // Get all the courseRequestsList where courses equals to coursesId
-        defaultCourseRequestsShouldBeFound("coursesId.equals=" + coursesId);
+        // Get all the courseRequestsList where coursesGroup equals to coursesGroupId
+        defaultCourseRequestsShouldBeFound("coursesGroupId.equals=" + coursesGroupId);
 
-        // Get all the courseRequestsList where courses equals to coursesId + 1
-        defaultCourseRequestsShouldNotBeFound("coursesId.equals=" + (coursesId + 1));
+        // Get all the courseRequestsList where coursesGroup equals to coursesGroupId + 1
+        defaultCourseRequestsShouldNotBeFound("coursesGroupId.equals=" + (coursesGroupId + 1));
     }
 
     /**

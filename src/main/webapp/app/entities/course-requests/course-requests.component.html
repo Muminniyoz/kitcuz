@@ -33,7 +33,7 @@
                     <th scope="col"  jhiSortBy="telephone"><span jhiTranslate="kitcuzApp.courseRequests.telephone">Telephone</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="mobile"><span jhiTranslate="kitcuzApp.courseRequests.mobile">Mobile</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="coursesId"><span jhiTranslate="kitcuzApp.courseRequests.courses">Courses</span> <fa-icon icon="sort"></fa-icon></th>
-                    <th scope="col"  jhiSortBy="coursesId"><span jhiTranslate="kitcuzApp.courseRequests.courses">Courses</span> <fa-icon icon="sort"></fa-icon></th>
+                    <th scope="col"  jhiSortBy="coursesGroupId"><span jhiTranslate="kitcuzApp.courseRequests.coursesGroup">Courses Group</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -55,8 +55,8 @@
                         </div>
                     </td>
                     <td>
-                        <div *ngIf="courseRequests.coursesId">
-                            <a [routerLink]="['/course-group', courseRequests.coursesId , 'view']" >{{ courseRequests.coursesId }}</a>
+                        <div *ngIf="courseRequests.coursesGroupId">
+                            <a [routerLink]="['/course-group', courseRequests.coursesGroupId , 'view']" >{{ courseRequests.coursesGroupId }}</a>
                         </div>
                     </td>
                     <td class="text-right">

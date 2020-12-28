@@ -46,7 +46,7 @@
             <column name="courses_id" type="bigint">
                 <constraints nullable="true" />
             </column>
-            <column name="courses_id" type="bigint">
+            <column name="courses_group_id" type="bigint">
                 <constraints nullable="true" />
             </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
