@@ -8,13 +8,20 @@ enum GroupStatus{
     FINISHED,
     CANCELED
 }
+enum FileGroup {
+	GLOBAL, USER
+}
 /**  Entities START */
 entity SystemFiles{
 	name String required,
+    hashName String unique
     type String maxlength(5),
     file Blob,
-    time Instant   
+    time Instant
+    fileGroup FileGroup
 }
+
+
 entity Courses {
 	title String required
     about TextBlob
@@ -56,6 +63,24 @@ entity CourseGroup {
     startDate LocalDate
     status GroupStatus    
 }
+entity Requests{
+	firstName String required,
+   lastName String required,
+   middleName String 
+   email String,
+   dateOfBirth LocalDate,
+   gender Gender,
+   registerationDate LocalDate,
+   telephone String,
+   mobile String,
+}
+
+entity Faq{
+	orderNumber Integer
+	question String
+    answer String
+    active Boolean
+}
 entity Theme {
 	name String
     number Integer
@@ -94,7 +119,7 @@ entity Projects{
     isShowing Boolean
 }
 entity AbilityStudent{
-	  firstName String required,
+	firstName String required,
    lastName String required,
    middleName String 
    about TextBlob
@@ -108,6 +133,24 @@ entity AbilityStudent{
    isShowing Boolean
 
 }
+entity Galereya{
+	title String
+    createdDate LocalDate
+}
+entity GalereyImages{
+	title String
+	imageUrl String
+    number String
+}
+entity Blog{
+	title String
+    short String
+    fullText TextBlob
+    createdDate LocalDate
+    active Boolean
+    imageUrl String
+}
+    
 
 relationship ManyToOne {
 	StudentGroup{student} to Student,
@@ -123,7 +166,10 @@ relationship ManyToOne {
     Planning{teacher} to Teacher,
     CourseGroup{teacher} to Teacher,
     CourseGroup{planning} to Planning,
-    Theme{planning} to Planning
+    Theme{planning} to Planning,
+    Requests{courses} to Courses,
+    Requests{courses} to CourseGroup
+    GalereyImages{galery } to Galereya
 }
 
 
