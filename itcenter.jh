@@ -168,7 +168,7 @@ relationship ManyToOne {
     CourseGroup{planning} to Planning,
     Theme{planning} to Planning,
     CourseRequests{courses} to Courses,
-    CourseRequests{courses} to CourseGroup
+    CourseRequests{coursesGroup} to CourseGroup
     GalereyImages{galerey} to Galereya
 }
 
