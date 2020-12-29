@@ -21,7 +21,7 @@ jobs:
         java-version: '8'
 
     - name: Build with Maven
-      run: mvn -Pprod,war clean verify
+      run: mvn clean install
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
