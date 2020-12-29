@@ -26,24 +26,43 @@ management:
         enabled: false
 
 spring:
+  # devtools:
+  #   restart:
+  #     enabled: false
+  #   livereload:
+  #     enabled: false
+  # datasource:
+  #   type: com.zaxxer.hikari.HikariDataSource
+  #   url: jdbc:postgresql://kitc.postgres.database.azure.com:5432/kitc
+  #   username: muminniyoz
+  #   password: Ab2747710m
+  #   hikari:
+  #     poolName: Hikari
+  #     auto-commit: false
+  #     data-source-properties:
+  #       cachePrepStmts: true
+  #       prepStmtCacheSize: 250
+  #       prepStmtCacheSqlLimit: 2048
+  #       useServerPrepStmts: true
+  include:
+      - swagger
   devtools:
     restart:
-      enabled: false
+      enabled: true
+      additional-exclude: static/**,.h2.server.properties
     livereload:
-      enabled: false
+      enabled: false # we use Webpack dev server + BrowserSync for livereload
+  jackson:
+    serialization:
+      indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://kitc.postgres.database.azure.com:5432/kitc
-    username: muminniyoz
-    password: Ab2747710m
+    url: jdbc:h2:file:./target/h2db/db/kitcuz;DB_CLOSE_DELAY=-1
+    username: kitcuz
+    password:
     hikari:
       poolName: Hikari
       auto-commit: false
-      data-source-properties:
-        cachePrepStmts: true
-        prepStmtCacheSize: 250
-        prepStmtCacheSqlLimit: 2048
-        useServerPrepStmts: true
   jpa:
     show-sql: false
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
